@@ -2,7 +2,7 @@ import { FC } from 'react'
 import Image from 'next/image'
 import { IAvatarProps, TSizeAvatarImage } from '@/ui/Avatar/interfaces'
 import { ESizeImageAvatar } from '@/ui/Avatar/constants'
-import classes from './Avatar.module.css'
+import styles from './Avatar.module.css'
 
 export const Avatar: FC<IAvatarProps> = (props) => {
   const { src, alt, size } = props
@@ -21,7 +21,7 @@ export const Avatar: FC<IAvatarProps> = (props) => {
   const sizeAvatar = getSizeAvatarImage(size)
 
   return (
-    <div className={classes.Avatar} style={{ width: sizeAvatar, height: sizeAvatar }}>
+    <div className={styles.avatar} style={{ width: sizeAvatar, height: sizeAvatar }}>
       <Image src={src} alt={alt} width={sizeAvatar} height={sizeAvatar} title={alt} />
     </div>
   )
