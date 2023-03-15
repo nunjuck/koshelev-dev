@@ -1,0 +1,29 @@
+.main-nav {
+
+}
+
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  &:not(:last-child) {
+    margin-right: 29px;
+  }
+}
+
+.nav-link {
+  color: var(--link-text-color);
+  text-underline-position: under;
+  text-transform: lowercase;
+}
+
+.nav-item--disabled {
+  pointer-events: none;
+
+  .nav-link {
+    color: var(--disabled-link-text-color);
+  }
+}
