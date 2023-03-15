@@ -1,9 +1,22 @@
 @import "./libs.css";
 
 :root {
-  --base-font-size: 16px
+  /* Fonts */
+  --base-font-size: 16px;
+  --base-font-weight-noraml: 400;
+  --base-font-weight-title: 500;
+
+  /* Colors */
+  --base-text-color: #333;
+  --link-text-color: #336FEE;
+  --disabled-link-text-color: #DADADA;
 }
 
 body {
   font-size: var(--base-font-size);
+  /* Переменная --font-family-inter была объявлена в _app.js */
+  /*noinspection CssUnresolvedCustomProperty*/
+  font-family: var(--font-family-inter);
+  font-weight: var(--base-font-weight-noraml);
+  color: var(--base-text-color);
 }

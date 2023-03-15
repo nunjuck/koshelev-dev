@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "postcss-nesting",
     "postcss-flexbugs-fixes",
     [
       "postcss-preset-env",
@@ -13,7 +14,7 @@
         }
       }
     ],
-    "postcss-nesting",
+
     ["@csstools/postcss-global-data", {
       "files": ["./src/styles/breakpoints.css"]
     }],
