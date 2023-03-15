@@ -1,0 +1,39 @@
+.footer {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 23px;
+}
+
+.social-list {
+  padding-left: 0;
+
+  @media (--breakpoint-medium-up) {
+    display: flex;
+  }
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+
+    @media (--breakpoint-medium-up) {
+      margin-right: 65px;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+
+.social-link {
+  margin-left: 12px;
+  text-decoration: none;
+  color: var(--base-text-color);
+
+  &:hover {
+    color: var(--black);
+  }
+}

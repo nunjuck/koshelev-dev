@@ -1,3 +1,16 @@
+import styles from './Home.module.css'
+
 export default function Home() {
-  return <main></main>
+  return (
+    <div className='page-wrapper'>
+      <div className={styles['about-me']}>
+        <p>Разработчик из России.</p>
+        <p>
+          Специализируюсь на разработке интерфейсов для веб. Большое внимание уделяю доступности. Основной технологией
+          для коммерческой разработки использую React с Typescript.{' '}
+        </p>
+        <p>Работал c большими проектами в больших командах и с маленькими в стартапах.</p>
+      </div>
+    </div>
+  )
 }

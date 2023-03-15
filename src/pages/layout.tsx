@@ -1,13 +1,19 @@
 import { ReactElement } from 'react'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
-export default function Layout(props: { className?: string; children: ReactElement }) {
-  const { className, children } = props
+export default function Layout(props: { children: ReactElement }) {
+  const { children } = props
 
   return (
-    <div className={className}>
-      <Header />
-      <main>{children}</main>
+    <div className='layout-wrapper'>
+      <div className='content-wrapper'>
+        <Header />
+        <main>{children}</main>
+      </div>
+      <div className='footer-wrapper'>
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -10,6 +10,12 @@
   --base-text-color: #333;
   --link-text-color: #336FEE;
   --disabled-link-text-color: #DADADA;
+  --black: #000
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -19,4 +25,24 @@ body {
   font-family: var(--font-family-inter);
   font-weight: var(--base-font-weight-noraml);
   color: var(--base-text-color);
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-wrapper {
+  flex: 1 0 auto;
+}
+
+.footer-wrapper {
+  flex: 0 0 auto;
+}
+
+.page-wrapper {
+  padding: 0 25px;
+  margin-top: 37px;
+  margin-bottom: 37px;
 }
