@@ -1,8 +1,12 @@
+import Head from 'next/head'
 import styles from './Home.module.css'
 
 export default function Home() {
   return (
     <div className='page-wrapper'>
+      <Head>
+        <title>Никита Кошелев – фронтенд разработчик</title>
+      </Head>
       <div className={styles['about-me']}>
         <p>Разработчик из России.</p>
         <p>
