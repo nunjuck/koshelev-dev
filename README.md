@@ -1,1 +1,1 @@
-[![](https://github.com/nunjuck/koshelev-dev/workflows/Deploy/badge.svg)](https://github.com/nunjuck/koshelev-dev/actions?query=workflow%3Aci)
+[![Статус деплоя](https://github.com/nunjuck/koshelev-dev/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/nunjuck/koshelev-dev/actions/workflows/ci.yml)
