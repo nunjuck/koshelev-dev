@@ -6,6 +6,7 @@ export default function Home() {
     <div className='page-wrapper'>
       <Head>
         <title>Никита Кошелев – фронтенд разработчик</title>
+        <meta name='description' content='Краткая информация, навыки, опыт и проекты' />
       </Head>
       <div className={styles['about-me']}>
         <p>Разработчик из России.</p>
