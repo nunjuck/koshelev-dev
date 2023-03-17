@@ -6,7 +6,7 @@ export default function Layout(props: { children: ReactElement }) {
   const { children } = props
 
   return (
-    <div className='layout-wrapper'>
+    <div className='layout-wrapper container'>
       <div className='content-wrapper'>
         <Header />
         <main>{children}</main>
